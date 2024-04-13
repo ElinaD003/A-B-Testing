@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 logging.basicConfig
 app_logger = logging.getLogger("MAB Application")
 
-# Set up logging
+# Setting up logging
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.DEBUG)
 console_handler.setFormatter(CustomFormatter())
@@ -265,22 +265,17 @@ def comparison(num_trials, results_eg, results_ts):
 
 bandit_win_rates = [1, 2, 3, 4]
 
-# Define the number of trials
 num_trials = 20000
 
-# Create instances of the EpsilonGreedy and ThompsonSampling classes
 epsilon_greedy = EpsilonGreedy(0.5)
 thompson_sampling = ThompsonSampling(0.5)
 
-# Run the experiments
 results_eg = epsilon_greedy.experiment(bandit_win_rates, num_trials)
 results_ts = thompson_sampling.experiment(bandit_win_rates, num_trials)
 
-# Visualize the results
 visualization = Visualization()
 visualization.plot1(num_trials, results_eg)
 visualization.plot2(results_eg, results_ts)
 
-# Compare the performances of the algorithms
 comparison(num_trials, results_eg, results_ts)
 
