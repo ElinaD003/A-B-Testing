@@ -14,13 +14,22 @@ logs.py: This file sets up logging functionalities for the project.
 To utilize the bandit algorithms:
 
 Clone or download the repository to your local machine.
+
 Run the logs.py file to set up logging functionalities.
+
 Run the bandit.py file to enable the necessary functionalities for the experiments.
+
 Open the report.ipynb notebook.
+
 Execute the notebook cells to run experiments with Epsilon Greedy and Thompson Sampling algorithms, visualize the results, and generate reports.
-Saving Experiment Output
+
+# Saving Experiment Output
 
 Both bandit algorithms save the output of the experiments in CSV files for future reference. The output includes details such as the chosen bandit for each trial, the rewards obtained, and the cumulative rewards and regrets over time.
+
+# Store the Rewards in a CSV File
+
+Experiment data, including bandit, reward, and algorithm information, is stored in CSV files. These files provide a structured format for easy analysis and retrieval of experimental results.
 
 # About
 
