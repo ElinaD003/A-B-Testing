@@ -4,7 +4,9 @@
 The project consists of the following files:
 
 bandit.py: This file contains the implementation of the Epsilon Greedy and Thompson Sampling bandit algorithms. Both classes provide methods for pulling arms, updating estimates, and conducting experiments. Additionally, they offer plotting and reporting methods to visualize the learning process and generate a summary report of the experiment.
+
 report.ipynb: This notebook demonstrates how to use the bandit algorithms implemented in the bandit.py file. It includes examples of running experiments with different parameters, plotting the results, and generating reports.
+
 logs.py: This file sets up logging functionalities for the project.
 
 # Usage
